@@ -3,7 +3,7 @@
 import { signIn } from '@/auth'
 import { ResultCode, getStringFromBuffer } from '@/lib/utils'
 import { z } from 'zod'
-import { kv } from '@vercel/kv'
+import { kv } from '@/lib/redis'
 import { getUser } from '../login/actions'
 import { AuthError } from 'next-auth'
 
